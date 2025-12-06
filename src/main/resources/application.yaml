@@ -3,10 +3,13 @@ spring:
     name: servicio-usuario
     
   datasource:
-    url: jdbc:mysql://mysql-hscs.railway.internal:3306/railway?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://ballast.proxy.rlwy.net:18056/railway?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: dAeBAeawaAPEouzukbDYNwCtzlomzlRz
     driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 30000
     
   jpa:
     hibernate:
