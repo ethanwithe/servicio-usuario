@@ -13,7 +13,7 @@ spring:
     
   jpa:
     hibernate:
-      ddl-auto: createDatabaseIfNotExist
+      ddl-auto: create
     show-sql: true
     properties:
       hibernate:
