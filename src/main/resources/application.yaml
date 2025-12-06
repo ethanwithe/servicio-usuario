@@ -20,10 +20,10 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
 
-  sql:
-    init:
-      mode: always        # ⬅ Ejecuta data.sql siempre
-      encoding: UTF-8     # ⬅ Evita errores de caracteres
+  # sql:
+  #   init:
+  #     mode: always        # ⬅ Ejecuta data.sql siempre
+  #     encoding: UTF-8     # ⬅ Evita errores de caracteres
 
 server:
   port: ${PORT:8081}
